@@ -6,10 +6,10 @@ java -cp jasypt-1.9.3.jar org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI input
 Decryption command:
 java -cp jasypt-1.9.3.jar org.jasypt.intf.cli.JasyptPBEStringDecryptionCLI input="3YAI79Zf8JzqNCoHB4ukyxD1fV33gs7v" password=master-password algorithm=PBEWithMD5AndDES
 
-You can add key in application properties as jasypt.encryptor.password=SimplePassword or you can also give it on runtime --d jasypt.encryptor.password=SimplePassword
+You can add key in application properties as jasypt.encryptor.password=master-password or you can also give it on runtime --d jasypt.encryptor.password=master-password
 
 
-
+java -jar jasypt-camel-spring-boot-0.0.1-SNAPSHOT.jar --jasypt.encryptor.password=master-password
 
 Steps
 -----
