@@ -32,7 +32,7 @@ public class CamelDemoRoute extends RouteBuilder {
 		from("timer://myTimer?repeatCount=1")
 		.routeId("jasypt-timer-route")
 		.log("\n\n***** injectedName: "+injectedName+" *****\n\n")
-		.log("\n\n***** injectedSecret: "+injectedSecret+" *****\n\n")
+		.log("\n\n***** Decrypted injectedSecret: "+injectedSecret+" *****\n\n")
 		;
 		
 		//Error Handling route!
