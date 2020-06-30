@@ -16,6 +16,18 @@ Decryption command:
 
 java -cp jasypt-1.9.3.jar org.jasypt.intf.cli.JasyptPBEStringDecryptionCLI input="3YAI79Zf8JzqNCoHB4ukyxD1fV33gs7v" password=jasypt-master-password algorithm=PBEWithMD5AndDES
 
+
+You may use the batch file as well. That is much simpler to use as expected (No longer you need to know the java command and the class name etc). Try it out to understand.
+
+Go to bin directory and use like below:
+
+<Installed_Location>\jasypt-1.9.3\bin>encrypt.bat input="My Secret to encrypt" password=master_pwd
+
+<Installed_Location>\jasypt-1.9.3\bin>decrypt.bat input=zmgrupGJtldPDIrdeMmqreQLHzK4naOp password=master_pwd
+
+
+
+
 You can add key in application properties as jasypt.encryptor.password=jasypt-master-password 
 OR
 You can also give it on runtime as program argument --jasypt.encryptor.password=jasypt-master-password
